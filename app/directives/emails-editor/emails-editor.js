@@ -16,6 +16,7 @@
           };
 
           $scope.keyPress = function(event) {
+            // 13 - ENTER, 44 - COMMA
             if (event.keyCode  === 13 || event.keyCode === 44) {
               event.preventDefault();
               addEmailBlock($scope);
@@ -23,7 +24,8 @@
           };
 
           $scope.keyDown = function(event) {
-            if(event.ctrlKey && event.keyCode == 86){
+            // Handler for CTRL+V
+            if(event.ctrlKey && event.keyCode == 86) {
               addEmailBlock($scope);
             }
           };
