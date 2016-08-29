@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" ng-app="myApp" ng-controller="myAppController">
+  <head>
+    <meta charset="utf-8">
+    <title>Emails editor</title>
+    <link rel="stylesheet" href="app/app.css">
+    <script src="vendor/jquery.js"></script>
+    <script src="vendor/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/directives/emails-editor/emails-editor.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <emails-editor data-emails="emails"></emails-editor>
+    </div>
+    <div class="actions">
+      <button class="btn-primary" ng-click="addEmails()">Add random email</button>
+      <button class="btn-primary" ng-click="getEmailsCount()">Get emails count</button>
+    </div>
+  </body>
+</html>

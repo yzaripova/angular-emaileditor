@@ -1,0 +1,60 @@
+.wrapper {
+  padding: 40px 40px 30px;
+  background: #f5f5f5;
+}
+
+.actions {
+  margin: 30px;
+}
+
+.btn-primary {
+  box-sizing: border-box;
+  margin-right: 20px;
+  border: 1px solid #69f;
+  border-radius: 2px;
+  padding: 6.5px 10px;
+  min-width: 100px; 
+  background: #69f;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+emails-editor {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  height: 100px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+emails-editor > input {
+  border: none;
+  outline: none;
+}
+
+.email-in-block {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 10px 5px 15px;
+  border-radius: 15px;
+  background: #d9e8ff;
+}
+
+.remove-icon {
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  float: right;
+}
+
+.remove-icon:hover {
+  color #000;
+}

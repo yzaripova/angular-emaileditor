@@ -1,0 +1,12 @@
+<div ng-repeat="email in emails track by $index" class="email-in-block" ng-class="isValid(email)">
+  {{email}}
+  <i class="remove-icon" ng-click="removeEmails(emails, $index)">×</i>
+</div>
+<input 
+  type="text" 
+  name="input" 
+  placeholder="add more people ..." 
+  ng-keypress="keyPress($event)"
+  ng-blur="blur($event)"
+  ng-model="text"
+>
