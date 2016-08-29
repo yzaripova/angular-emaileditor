@@ -47,7 +47,7 @@
     });
 
   function addEmailBlock($scope) {
-    if ($scope.text.trim() !== '') {
+    if ($scope.text && $scope.text.trim() !== '') {
       $scope.emails.push($scope.text);
     }
 
