@@ -20,7 +20,7 @@
   cursor: pointer;
 }
 
-emails-editor {
+.emails-editor {
   display: block;
   box-sizing: border-box;
   padding: 10px;
@@ -31,7 +31,7 @@ emails-editor {
   overflow-x: hidden;
 }
 
-emails-editor > input {
+.emails-editor > input {
   border: none;
   outline: none;
 }
@@ -45,7 +45,11 @@ emails-editor > input {
   background: #d9e8ff;
 }
 
-.remove-icon {
+.email-in-block.not-valid > .text {
+  border-bottom: 1px solid #d9534f;
+}
+
+.email-in-block > .remove-icon {
   display: inline-block;
   margin-left: 10px;
   cursor: pointer;
@@ -55,6 +59,6 @@ emails-editor > input {
   float: right;
 }
 
-.remove-icon:hover {
+.email-in-block > .remove-icon:hover {
   color #000;
 }
