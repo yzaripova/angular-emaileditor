@@ -38,7 +38,7 @@
             emails.splice(index, 1);
           };
 
-          $scope.isValid = function(email) {
+          $scope.getNotValidClass = function(email) {
             var isValid = $scope.pattern.test(email);
             if (!isValid) {
               return 'not-valid';

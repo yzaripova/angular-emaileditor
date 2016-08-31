@@ -1,5 +1,5 @@
 <div class="emails-editor" ng-click="click()" ng-keydown="keyDown($event)">
-  <div ng-repeat="email in emails track by $index" class="email-in-block" ng-class="isValid(email)">
+  <div ng-repeat="email in emails track by $index" class="email-in-block" ng-class="getNotValidClass(email)">
     <span class="text">{{email}}</span>
     <i class="remove-icon" ng-click="removeEmails(emails, $index)">×</i>
   </div>
