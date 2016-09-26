@@ -1,9 +1,11 @@
 (function() {
   'use strict';
 
-  const ENTER = 13;
-  const COMMA = 44;
-  const CTRLV = 86;
+  const KEYCODES = {
+    ENTER: 13,
+    COMMA: 44,
+    V: 86,
+  }
 
   angular.module('myApp')
     .directive('emailsEditor', function() {
@@ -21,14 +23,14 @@
           };
 
           $scope.keyPress = function(event) {
-            if (event.keyCode  === ENTER || event.keyCode === COMMA) {
+            if (event.keyCode  === KEYCODES.ENTER || event.keyCode === KEYCODES.COMMA) {
               event.preventDefault();
               addEmailBlock($scope);
             }
           };
 
           $scope.keyDown = function(event) {
-            if(event.ctrlKey && event.keyCode === CTRLV) {
+            if(event.ctrlKey && event.keyCode === KEYCODES.V) {
               addEmailBlock($scope);
             }
           };
